@@ -1,4 +1,4 @@
-NaLIR Implementation
+# NaLIR Implementation
 
 dependency parser (spaCy + Stanford parser), node mapping + adjustment, interactive communicator, query translation, interface
 
