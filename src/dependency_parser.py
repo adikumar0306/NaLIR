@@ -7,7 +7,7 @@ print(torch.__version__)
 # Load the SpaCy model
 nlp = spacy.load("en_core_web_sm")
 
-stanza.download('en') 
+#stanza.download('en') uncomment this the first time running the program
 
 #load standord parse model
 nlp2 = stanza.Pipeline(lang='en')
