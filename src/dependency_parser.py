@@ -7,7 +7,7 @@ print(torch.__version__)
 # Load the SpaCy model
 nlp = spacy.load("en_core_web_sm")
 
-#stanza.download('en') uncomment this the first time running the program
+stanza.download('en') 
 
 #load standord parse model
 nlp2 = stanza.Pipeline(lang='en')
@@ -57,33 +57,3 @@ if __name__ == "__main__":
     print_parse_tree(doc)
     print("Here is the output for Stanford Parser: ")
     print_stanza_parse_tree(doc2)
-
-#Output:
-
-"""
-Here is the output for spaCy: 
-Return (ROOT) -> Return
-the (det) -> number
-average (amod) -> number
-number (dobj) -> Return
-of (prep) -> number
-publications (pobj) -> of
-by (prep) -> Return
-Bob (pobj) -> by
-each (det) -> year
-year (npadvmod) -> Return
-. (punct) -> Return
-
-Here is the output for Stanford Parser:
-Return (root) -> ROOT
-the (det) -> number
-average (amod) -> number
-number (obj) -> Return
-of (case) -> publications
-publications (nmod) -> number
-by (case) -> Bob
-Bob (nmod) -> publications
-each (det) -> year
-year (obl:tmod) -> Return
-. (punct) -> Return
-"""

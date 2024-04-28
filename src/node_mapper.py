@@ -95,8 +95,8 @@ if __name__ == "__main__":
     query = "Return the average number of publications by Bob each year."
     process_query(query)
 
+#output:
 """
-Output:
 Token: Return, Type: SN, SQL: SELECT
 Token: the, Type: Unknown, SQL: UNKNOWN
 Token: average, Type: FN, SQL: AVG(ROOT)
