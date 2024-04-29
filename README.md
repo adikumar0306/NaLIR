@@ -1,7 +1,6 @@
 # NaLIR Implementation
 
-run 
-```python code```  from the root directory to set up env.
+run ```pip install -r requirements.txt``` from the root directory to set up env.
 
 dependency_parser.py: type desired query in __main__ in the query var to see the lingustic tree from both stanza and spaCy
 
